@@ -48,7 +48,7 @@ class PetRecyclerAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
             // glide set images
             val requestOption = RequestOptions().placeholder(R.drawable.ic_launcher_background).error(R.drawable.ic_launcher_background)
 
-            Glide.with(itemView.context).load(pet.image).into(petImage)
+            Glide.with(itemView.context).applyDefaultRequestOptions(requestOption).load(pet.image).into(petImage)
         }
     }
 
