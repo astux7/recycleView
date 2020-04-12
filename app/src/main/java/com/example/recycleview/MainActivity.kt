@@ -25,6 +25,8 @@ class MainActivity : AppCompatActivity() {
         // access recycle view update property
         recycle_view.apply {
             layoutManager = LinearLayoutManager(this@MainActivity)
+            val topSpacingItemDecoration = TopSpacingItemDecoration(30)
+            addItemDecoration(topSpacingItemDecoration)
             petAdapter = PetRecyclerAdapter()
             adapter = petAdapter
         }
