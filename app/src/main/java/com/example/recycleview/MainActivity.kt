@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
-// should not be good
+// should not be goood
 
 class MainActivity : AppCompatActivity() {
     lateinit var petAdapter: PetRecyclerAdapter
